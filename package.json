@@ -1,0 +1,16 @@
+{
+  "name": "weback",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "tailwindcss build src/main/resources/static/css/tailwind.css -o src/main/resources/static/css/styles.css"
+  },
+  "keywords": [],
+  "author": "diego",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^3.4.4"
+  }
+}
