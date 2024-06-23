@@ -52,7 +52,9 @@
  			<artifactId>spring-boot-starter-thymeleaf</artifactId>
 		</dependency>
 	</dependencies>
-
+	<resources>
+	
+	</resources>
 	<build>
 		<plugins>
 			<plugin>
