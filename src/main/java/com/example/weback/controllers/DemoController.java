@@ -1,20 +1,14 @@
 package com.example.weback.controllers;
 
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-//Defino la clase como controlador
-@Controller
+@RestController
 public class DemoController {
     
-    // Mapea la URL "/index.html" a este método para solicitudes GET
-    @RequestMapping(value="/index.html", method = RequestMethod.GET)
-    //El contenido de responseBody me devuelve la respuesta HTTP
-    @ResponseBody
-    public String index(){
+    //Mapeo de la URL 
+    @GetMapping("/index.html")
+    public String index() {
         return "Return de prueba";
     }
 }
