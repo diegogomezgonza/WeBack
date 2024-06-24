@@ -12,6 +12,9 @@
   "author": "diego",
   "license": "ISC",
   "dependencies": {
+    "@fontsource/bebas-neue": "^5.0.20",
+    "@fontsource/lilita-one": "^5.0.20",
+    "@fontsource/raleway": "^5.0.19",
     "autoprefixer": "^10.4.19",
     "postcss": "^8.4.38"
   },

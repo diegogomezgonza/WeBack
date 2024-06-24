@@ -1,3 +1,9 @@
+/* Fuentes */
+@import "@fontsource/raleway"; 
+@import '@fontsource/lilita-one';
+
+
+/* Tailwind */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
