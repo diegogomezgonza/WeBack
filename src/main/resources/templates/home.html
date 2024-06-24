@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>We Back</title>
+    <!-- CSS general -->
     <link rel="stylesheet" data-th-href="@{'/css/styles.css'}">
+    <link rel="stylesheet" href="custom.css">
     <!-- Lilita one font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +15,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../static/css/home/home.css">
 </head>
 <body class="font-raleway bg-gray-100 text-gray-800">
     <!-- Header -->
@@ -23,7 +27,6 @@
                 <ul class="flex space-x-4">
                     <li><a href="#" class="text-gray-700 hover:text-indigo-600">Inicio</a></li>
                     <li><a href="#" class="text-gray-700 hover:text-indigo-600">Galería</a></li>
-                    <li><a href="#" class="text-gray-700 hover:text-indigo-600">Sobre mi</a></li>
                     <li><a href="#" class="text-gray-700 hover:text-indigo-600">Contacto</a></li>
                 </ul>
             </nav>
@@ -32,72 +35,28 @@
 
     <!-- Main Content -->
     <main class="container mx-auto px-4 py-8">
-        <section class="text-center mb-12">
-            <h2 class="text-4xl font-bold mb-4">Bienvenidos a We Back</h2>
-            <p class="text-lg text-gray-600">Explora nuestros diseños de arte únicos y creativos.</p>
-        </section>
-
         <!-- Gallery -->
         <section>
             <h3 class="text-2xl font-bold mb-4">Galería de Arte</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Art Piece 1 -->
-                <div class="bg-white shadow-md rounded-lg overflow-hidden">
-                    <img src="https://via.placeholder.com/400" alt="Arte 1" class="w-full h-48 object-cover">
-                    <div class="p-4">
-                        <h4 class="text-xl font-bold">Título del Arte 1</h4>
-                        <p class="text-gray-600">Descripción breve del arte 1.</p>
+            <div class="album">
+                <div class="responsive-container-block bg">
+                    <div class="responsive-container-block img-cont">
+                        <img class="img" src="https://picsum.photos/200/300?random=1">
+                        <img class="img" src="https://picsum.photos/400/600?random=2">
+                        <img class="img img-last" src="https://picsum.photos/300/150?random=3">
                     </div>
-                </div>
-                <!-- Art Piece 2 -->
-                <div class="bg-white shadow-md rounded-lg overflow-hidden">
-                    <img src="https://via.placeholder.com/400" alt="Arte 2" class="w-full h-48 object-cover">
-                    <div class="p-4">
-                        <h4 class="text-xl font-bold">Título del Arte 2</h4>
-                        <p class="text-gray-600">Descripción breve del arte 2.</p>
+                    <div class="responsive-container-block img-cont">
+                        <img class="img img-big" src="https://picsum.photos/250/700?random=4">
+                        <img class="img img-big img-last" src="https://picsum.photos/600/250?random=5">
                     </div>
-                </div>
-                <!-- Art Piece 3 -->
-                <div class="bg-white shadow-md rounded-lg overflow-hidden">
-                    <img src="https://via.placeholder.com/400" alt="Arte 3" class="w-full h-48 object-cover">
-                    <div class="p-4">
-                        <h4 class="text-xl font-bold">Título del Arte 3</h4>
-                        <p class="text-gray-600">Descripción breve del arte 3.</p>
-                    </div>
-                </div>
-                <!-- Art Piece 4 -->
-                <div class="bg-white shadow-md rounded-lg overflow-hidden">
-                    <img src="https://via.placeholder.com/400" alt="Arte 4" class="w-full h-48 object-cover">
-                    <div class="p-4">
-                        <h4 class="text-xl font-bold">Título del Arte 4</h4>
-                        <p class="text-gray-600">Descripción breve del arte 4.</p>
-                    </div>
-                </div>
-                <!-- Art Piece 5 -->
-                <div class="bg-white shadow-md rounded-lg overflow-hidden">
-                    <img src="https://via.placeholder.com/400" alt="Arte 5" class="w-full h-48 object-cover">
-                    <div class="p-4">
-                        <h4 class="text-xl font-bold">Título del Arte 5</h4>
-                        <p class="text-gray-600">Descripción breve del arte 5.</p>
-                    </div>
-                </div>
-                <!-- Art Piece 6 -->
-                <div class="bg-white shadow-md rounded-lg overflow-hidden">
-                    <img src="https://via.placeholder.com/400" alt="Arte 6" class="w-full h-48 object-cover">
-                    <div class="p-4">
-                        <h4 class="text-xl font-bold">Título del Arte 6</h4>
-                        <p class="text-gray-600">Descripción breve del arte 6.</p>
+                    <div class="responsive-container-block img-cont">
+                        <img class="img" src="https://picsum.photos/150/500?random=6">
+                        <img class="img" src="https://picsum.photos/350/400?random=7">
+                        <img class="img" src="https://picsum.photos/700/200?random=8">
                     </div>
                 </div>
             </div>
         </section>
     </main>
-
-    <!-- Footer -->
-    <footer class="bg-white shadow-md mt-12">
-        <div class="container mx-auto px-4 py-6 text-center">
-            <p class="text-gray-600">&copy; 2024 We Back. @diegogomezgonza.</p>
-        </div>
-    </footer>
 </body>
 </html>
