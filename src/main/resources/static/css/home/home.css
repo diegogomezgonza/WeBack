@@ -16,7 +16,7 @@
   }
   
   .album .responsive-container-block.bg {
-    max-width: 1320px;
+    width: 100%;
     margin: 0 0 0 0;
     justify-content: space-between;
   }
