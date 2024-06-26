@@ -6,7 +6,7 @@ module.exports = {
     extend: {
       fontFamily: {
         raleway:['Raleway', 'sans-serif'],
-        lilita: ['Lilita One', 'sans-serif']
+        rozha: ['Rozha One', 'serif']
       }
     },
   },
