@@ -1,7 +1,5 @@
 import React from 'react';
-// CSS general
 import '../css/index.css';
-// CSS home
 import '../css/home.css';
 
 const Home: React.FC = () => {
@@ -31,18 +29,18 @@ const Home: React.FC = () => {
           </nav>
         </div>
       </header>
-      {/* Main Content */}
       <main className="container mx-auto px-4 py-8">
-        {/* Gallery */}
         <section>
           <div className="album">
             <div className="responsive-container-block bg">
               <div className="responsive-container-block img-cont">
                 <img
                   className="img"
-                  src="https://picsum.photos/800/1200?random=1"
+                  src="https://picsum.photos/600/2000?random=6"
                   alt="Gallery Image"
                 />
+              </div>
+              <div className="responsive-container-block img-cont">
                 <img
                   className="img"
                   src="https://picsum.photos/1600/2400?random=2"
@@ -50,26 +48,7 @@ const Home: React.FC = () => {
                 />
                 <img
                   className="img img-last"
-                  src="https://picsum.photos/1200/600?random=3"
-                  alt="Gallery Image"
-                />
-              </div>
-              <div className="responsive-container-block img-cont">
-                <img
-                  className="img img-big"
-                  src="https://picsum.photos/1000/2800?random=4"
-                  alt="Gallery Image"
-                />
-                <img
-                  className="img img-big img-last"
                   src="https://picsum.photos/2400/1000?random=5"
-                  alt="Gallery Image"
-                />
-              </div>
-              <div className="responsive-container-block img-cont">
-                <img
-                  className="img"
-                  src="https://picsum.photos/600/2000?random=6"
                   alt="Gallery Image"
                 />
                 <img
@@ -77,9 +56,26 @@ const Home: React.FC = () => {
                   src="https://picsum.photos/1400/1600?random=7"
                   alt="Gallery Image"
                 />
+              </div>
+              <div className="responsive-container-block img-cont">
+                <img
+                  className="img img-last"
+                  src="https://picsum.photos/1200/600?random=3"
+                  alt="Gallery Image"
+                />
                 <img
                   className="img"
                   src="https://picsum.photos/2800/800?random=8"
+                  alt="Gallery Image"
+                />
+                <img
+                  className="img"
+                  src="https://picsum.photos/1400/1600?random=9"
+                  alt="Gallery Image"
+                />
+                <img
+                  className="img"
+                  src="https://picsum.photos/1400/1600?random=10"
                   alt="Gallery Image"
                 />
               </div>

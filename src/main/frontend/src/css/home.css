@@ -45,7 +45,6 @@
 }
 
 /* Media queries */
-/* Ajuste de margen para pantallas más pequeñas */
 @media (max-width: 1024px) {
     .album .img {
         margin-bottom: 18px;
