@@ -6,7 +6,7 @@
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
-    margin: 0 auto; 
+    margin: 0 auto;
     justify-content: flex-start;
 }
 
@@ -17,8 +17,9 @@
 
 /* Estilos generales de las imágenes */
 .album .img {
-    width: 100%;
-    margin-bottom: 20px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
@@ -38,55 +39,54 @@
 
 /* Estilos específicos para imágenes grandes */
 .album .img.img-big {
-    height: 50%;
-    margin-bottom: 16px; 
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 12px;
 }
 
 /* Media queries */
 /* Ajuste de margen para pantallas más pequeñas */
 @media (max-width: 1024px) {
     .album .img {
-        margin-bottom: 18px; 
+        margin-bottom: 18px;
     }
 }
 
 @media (max-width: 768px) {
     .album .img {
         max-width: 32.5%;
-        margin: 0; 
+        margin: 0;
     }
 
     .album .responsive-container-block.img-cont {
         max-width: 100%;
-        flex-direction: row; 
-        /* Elementos espaciados */
-        justify-content: space-between; 
+        flex-direction: row;
+        justify-content: space-between;
     }
-/* Ancho máximo del 49% para imágenes grandes */
+
     .album .img.img-big {
-        max-width: 49%; 
-        margin: 0; 
+        max-width: 49%;
+        margin: 0;
     }
 }
-/* Ancho máximo del 94% para pantallas muy pequeñas */
+
 @media (max-width: 500px) {
     .album .img {
-        max-width: 94%; 
-        margin-bottom: 25px; 
+        max-width: 94%;
+        margin-bottom: 25px;
     }
 
     .album .responsive-container-block.img-cont {
-        align-items: center; /* Centrar elementos */
-        padding: 10px; /* Relleno interior */
-    }
-/* Ancho máximo del 94% para imágenes grandes en pantallas pequeñas */
-    .album .img.img-big {
-        max-width: 94%; 
-        margin-bottom: 25px; 
+        align-items: center;
+        padding: 10px;
     }
 
-/* Margen inferior para la última imagen */
+    .album .img.img-big {
+        max-width: 94%;
+        margin-bottom: 25px;
+    }
+
     .album .img.img-last {
-        margin-bottom: 5px; 
+        margin-bottom: 5px;
     }
 }
