@@ -6,7 +6,7 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>3.3.1</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath/>
 	</parent>
 	<groupId>com.example.weback</groupId>
 	<artifactId>demo</artifactId>
@@ -31,6 +31,10 @@
 	</properties>
 	<dependencies>
 
+		<dependency>
+    		<groupId>org.springframework.boot</groupId>
+    		<artifactId>spring-boot-starter</artifactId>
+			</dependency>
 		<!-- Spring actuator -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -49,7 +53,6 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<!-- Dependency that allows display of html -->
 		<!-- Thymeleaf -->
 		<dependency>
  			<groupId>org.springframework.boot</groupId>
@@ -87,9 +90,6 @@
             <version>42.3.1</version> <!-- Verificar la versión más reciente -->
         </dependency>
 	</dependencies>
-	<resources>
-
-	</resources>
 	<build>
 		<plugins>
 			<plugin>
