@@ -17,4 +17,16 @@ public class DemoController {
     public String home() {
         return "home";
     }
+
+    // URL gallery
+    @GetMapping("/gallery.html")
+    public String gallery() {
+        return "gallery";
+    }
+
+    // URL contact
+    @GetMapping("/contact.html")
+    public String contact() {
+        return "contact";
+    }
 }

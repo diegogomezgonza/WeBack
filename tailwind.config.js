@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        raleway:['Raleway', 'sans-serif'],
+        benchnine: ['"Bench Nine"', 'sans-serif'],
         rozha: ['Rozha One', 'serif']
       }
     },

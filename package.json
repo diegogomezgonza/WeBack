@@ -6,15 +6,13 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:css": "tailwindcss build src/main/resources/static/css/tailwind.css -o src/main/resources/static/css/styles.css"
+    "build:css": "tailwindcss build src/main/resources/static/css/tailwind.css -o src/main/resources/static/css/styles.css",
+    "watch": "tailwindcss -i src/main/resources/static/css/tailwind.css -o src/main/resources/static/css/styles.css --watch"
   },
   "keywords": [],
   "author": "diego",
   "license": "ISC",
   "dependencies": {
-    "@fontsource/bebas-neue": "^5.0.20",
-    "@fontsource/lilita-one": "^5.0.20",
-    "@fontsource/raleway": "^5.0.19",
     "autoprefixer": "^10.4.19",
     "postcss": "^8.4.38"
   },
