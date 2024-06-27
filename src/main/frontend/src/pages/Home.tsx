@@ -5,24 +5,27 @@ import '../css/home.css';
 const Home: React.FC = () => {
   return (
     <div>
-      <header className="bg-white shadow-md">
+      <header className="bg-white">
         <div className="container mx-auto px-4 py-6 flex justify-between items-center">
           <h1 className="font-benchnine font-bold text-3xl">WE BACK</h1>
           <nav>
-            <ul className="flex space-x-4 font-rozha text-xl">
-              <li>
-                <a href="#" className="hover:text-yellow-500">
-                  Inicio
-                </a>
-              </li>
-              <li>
+            <ul className="flex space-x-4 font-rozha text-xl gap-10">
+            <li>
                 <a href="gallery.html" className="hover:text-yellow-500">
-                  Galería
+                  <img
+                    src={`gallery.svg`}
+                    alt="Galería"
+                    className="h-20 w-20"
+                  />
                 </a>
               </li>
               <li>
                 <a href="contact.html" className="hover:text-yellow-500">
-                  Contacto
+                  <img
+                    src={`contact.svg`}
+                    alt="Contacto"
+                    className="h-20 w-20"
+                  />
                 </a>
               </li>
             </ul>
