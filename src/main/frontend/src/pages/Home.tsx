@@ -13,18 +13,18 @@ const Home: React.FC = () => {
             <li>
                 <a href="gallery.html" className="hover:text-yellow-500">
                   <img
-                    src={`gallery.svg`}
+                    src={`gallery.png`}
                     alt="Galería"
-                    className="h-20 w-20"
+                    className="h-10 w-10"
                   />
                 </a>
               </li>
               <li>
                 <a href="contact.html" className="hover:text-yellow-500">
                   <img
-                    src={`contact.svg`}
+                    src={`contact.png`}
                     alt="Contacto"
-                    className="h-20 w-20"
+                    className="h-10 w-10"
                   />
                 </a>
               </li>
