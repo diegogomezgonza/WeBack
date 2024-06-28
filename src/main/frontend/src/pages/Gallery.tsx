@@ -7,7 +7,7 @@ import '../css/home.css';
 import Album from '../components/Album';
 import Header from '../components/Header';
 
-const Home: React.FC = () => {
+const Gallery: React.FC = () => {
   return (
     <div>
       <Header/>
@@ -16,4 +16,4 @@ const Home: React.FC = () => {
   );
 };
 
-export default Home;
+export default Gallery;
