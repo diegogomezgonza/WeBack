@@ -24,7 +24,7 @@
 }
 
 /* Estilos para el estado hover de las imágenes */
-.album .img:hover {
+.album .img-wrapper:hover .img {
     transform: scale(1.05);
     opacity: 0.8;
 }
@@ -42,6 +42,39 @@
     max-width: 100%;
     height: auto;
     margin-bottom: 12px;
+}
+
+/* Estilos para el contenedor de la imagen */
+.album .img-wrapper {
+    position: relative;
+}
+
+/* Estilos para la superposición de la imagen */
+.album .img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Estilos para el título de la imagen */
+.album .img-title {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Estilos para el estado hover de la superposición de la imagen */
+.album .img-wrapper:hover .img-overlay {
+    opacity: 1;
 }
 
 /* Media queries */
