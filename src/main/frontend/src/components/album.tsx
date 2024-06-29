@@ -1,6 +1,22 @@
 import React from 'react';
+import Swal from 'sweetalert2';
+import 'sweetalert2/src/sweetalert2.scss';
 
 const Album: React.FC = () => {
+  const handleAddToGallery = () => {
+    Swal.fire({
+      title: '¡Añadido a la galería!',
+      text: 'Tu imagen ha sido añadida con éxito.',
+      icon: 'success',
+      confirmButtonText: 'Ok',
+      customClass: {
+        popup: 'swal2-popup',
+        title: 'swal2-title',
+        icon: 'swal2-icon'
+      }
+    });
+  };
+
   return (
     <main className="container mx-auto px-4 py-8">
       <section>
@@ -15,7 +31,7 @@ const Album: React.FC = () => {
                 />
                 <div className="img-overlay">
                   <span className="img-title">Image 1</span>
-                  <span className="img-plus" onClick={() => alert("Añadida a la galería")}>
+                  <span className="img-plus" onClick={handleAddToGallery}>
                     +
                   </span>
                 </div>
@@ -30,7 +46,7 @@ const Album: React.FC = () => {
                 />
                 <div className="img-overlay">
                   <span className="img-title">Image 2</span>
-                  <span className="img-plus" onClick={() => alert("Añadida a la galería")}>
+                  <span className="img-plus" onClick={handleAddToGallery}>
                     +
                   </span>
                 </div>
@@ -43,7 +59,7 @@ const Album: React.FC = () => {
                 />
                 <div className="img-overlay">
                   <span className="img-title">Image 3</span>
-                  <span className="img-plus" onClick={() => alert("Añadida a la galería")}>
+                  <span className="img-plus" onClick={handleAddToGallery}>
                     +
                   </span>
                 </div>
@@ -56,7 +72,7 @@ const Album: React.FC = () => {
                 />
                 <div className="img-overlay">
                   <span className="img-title">Image 4</span>
-                  <span className="img-plus" onClick={() => alert("Añadida a la galería")}>
+                  <span className="img-plus" onClick={handleAddToGallery}>
                     +
                   </span>
                 </div>
@@ -71,7 +87,7 @@ const Album: React.FC = () => {
                 />
                 <div className="img-overlay">
                   <span className="img-title">Image 5</span>
-                  <span className="img-plus" onClick={() => alert("Añadida a la galería")}>
+                  <span className="img-plus" onClick={handleAddToGallery}>
                     +
                   </span>
                 </div>
@@ -84,7 +100,7 @@ const Album: React.FC = () => {
                 />
                 <div className="img-overlay">
                   <span className="img-title">Image 6</span>
-                  <span className="img-plus" onClick={() => alert("Añadida a la galería")}>
+                  <span className="img-plus" onClick={handleAddToGallery}>
                     +
                   </span>
                 </div>
@@ -97,7 +113,7 @@ const Album: React.FC = () => {
                 />
                 <div className="img-overlay">
                   <span className="img-title">Image 7</span>
-                  <span className="img-plus" onClick={() => alert("Añadida a la galería")}>
+                  <span className="img-plus" onClick={handleAddToGallery}>
                     +
                   </span>
                 </div>
@@ -110,7 +126,7 @@ const Album: React.FC = () => {
                 />
                 <div className="img-overlay">
                   <span className="img-title">Image 8</span>
-                  <span className="img-plus" onClick={() => alert("Añadida a la galería")}>
+                  <span className="img-plus" onClick={handleAddToGallery}>
                     +
                   </span>
                 </div>
