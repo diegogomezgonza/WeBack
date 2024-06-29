@@ -16,10 +16,11 @@
 
 - Framework: Spring Boot
 - Lenguaje: Java
-- Spring JPA para la capa de persistencia
 - Spring Web para el desarrollo de API RESTful
 - Spring Security para la gestión de la seguridad
 ### Frontend:
 
 - React y TypeScript para el desarrollo de la interfaz de usuario
 - Tailwind CSS para estilos y diseño responsivo
+### Despliegue:
+- Docker
