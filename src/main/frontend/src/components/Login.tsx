@@ -3,7 +3,7 @@ import React from "react";
 const Login: React.FC = () => {
   return (
     // Modal de login
-    <div className="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50">
+    <div className="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50 z-50">
       <div className="bg-white p-8 rounded shadow-md w-96">
         <h2 className="text-2xl mb-6 text-center">Login</h2>
         <form>
