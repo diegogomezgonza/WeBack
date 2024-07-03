@@ -17,6 +17,11 @@ const Header: React.FC = () => {
     setIsModalOpen(true);
   };
 
+  // Función para cerrar el modal
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <header className="bg-white">
       <div className="container mx-auto px-4 py-6 flex justify-between items-center">
@@ -39,7 +44,7 @@ const Header: React.FC = () => {
           </ul>
         </nav>
       </div>
-      {isModalOpen && <Login />}
+      {isModalOpen && <Login closeModal={closeModal} />}
     </header>
   );
 };

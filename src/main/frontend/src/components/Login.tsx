@@ -1,10 +1,22 @@
 import React from "react";
 
-const Login: React.FC = () => {
+// Definición del tipo de las props para incluir la función closeModal
+interface LoginProps {
+  closeModal: () => void;
+}
+
+const Login: React.FC<LoginProps> = ({ closeModal }) => {
   return (
     // Modal de login
     <div className="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50 z-50">
-      <div className="bg-white p-8 rounded shadow-md w-96">
+      <div className="bg-white p-8 rounded shadow-md w-96 relative">
+        {/* Botón de cierre */}
+        <button
+          onClick={closeModal}
+          className="absolute top-2 right-2 text-gray-500 hover:text-gray-700"
+        >
+          &times;
+        </button>
         <h2 className="text-2xl mb-6 text-center">Login</h2>
         <form>
           {/* Correo */}
