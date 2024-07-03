@@ -1,7 +1,10 @@
 import React from 'react';
+//Librería para el alert
 import Swal from 'sweetalert2';
+//CSS para el alert
 import 'sweetalert2/src/sweetalert2.scss';
 
+//Propiedades del alert 
 const Album: React.FC = () => {
   const handleAddToGallery = () => {
     Swal.fire({
@@ -18,10 +21,13 @@ const Album: React.FC = () => {
   };
 
   return (
+    //Album
     <main className="container mx-auto px-4 py-8">
       <section>
+        {/* Contenedor principal */}
         <div className="album">
           <div className="responsive-container-block bg">
+            {/* Imágenes */}
             <div className="responsive-container-block img-cont">
               <div className="img-wrapper">
                 <img
