@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import Password from "./Password";
 
 // Definición del tipo de las props para incluir la función closeModal
 interface LoginProps {
@@ -6,6 +7,18 @@ interface LoginProps {
 }
 
 const Login: React.FC<LoginProps> = ({ closeModal }) => {
+  const [showPasswordModal, setShowPasswordModal] = useState(false);
+
+  // Función para abrir el modal de recuperar contraseña
+  const openPasswordModal = () => {
+    setShowPasswordModal(true);
+  };
+
+  // Función para cerrar el modal de recuperar contraseña
+  const closePasswordModal = () => {
+    setShowPasswordModal(false);
+  };
+
   return (
     // Modal de login
     <div className="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50 z-50">
@@ -42,6 +55,17 @@ const Login: React.FC<LoginProps> = ({ closeModal }) => {
             Iniciar Sesión
           </button>
         </form>
+
+        {/* Recuperar contraseña */}
+        <p
+          className="text-yellow-500 text-sm mt-4 text-center cursor-pointer hover:underline"
+          onClick={openPasswordModal}
+        >
+          He olvidado mi contraseña
+        </p>
+
+        {/* Modal para recuperar contraseña */}
+        {showPasswordModal && <Password closeModal={closePasswordModal} />}
       </div>
     </div>
   );
