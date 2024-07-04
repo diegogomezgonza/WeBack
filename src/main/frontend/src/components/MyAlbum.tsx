@@ -22,7 +22,7 @@ const MyAlbum: React.FC = () => {
         {collections.map((collection, index) => (
           <div key={index} className="bg-white p-4 rounded shadow-md">
             <div className="grid grid-cols-2 gap-2 mb-4">
-              {collection.images.map((image, imgIndex) => (
+              {collection.images.map((imgIndex) => (
                 <div key={imgIndex} className="w-full h-32 bg-gray-200">
                   <img
                     src="https://picsum.photos/600/2000?random=6"
