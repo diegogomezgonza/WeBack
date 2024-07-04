@@ -25,7 +25,7 @@ const MyAlbum: React.FC = () => {
               {collection.images.map((image, imgIndex) => (
                 <div key={imgIndex} className="w-full h-32 bg-gray-200">
                   <img
-                    src={image}
+                    src="https://picsum.photos/600/2000?random=6"
                     alt={`Imagen ${imgIndex + 1}`}
                     className="w-full h-full object-cover rounded"
                   />
