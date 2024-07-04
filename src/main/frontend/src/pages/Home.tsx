@@ -4,8 +4,10 @@ import '../css/index.css';
 //CSS custom
 import '../css/home.css';
 //Componentes
-import Album from '../components/Album';
 import Header from '../components/Header';
+import Album from '../components/Album';
+
+
 
 const Home: React.FC = () => {
   return (

@@ -4,14 +4,15 @@ import '../css/index.css';
 //CSS custom
 import '../css/home.css';
 //Componentes
-import Album from '../components/Album';
 import Header from '../components/Header';
+import MyAlbum from '../components/MyAlbum';
+
 
 const Gallery: React.FC = () => {
   return (
     <div>
       <Header/>
-      <Album/>
+      <MyAlbum/>
     </div>
   );
 };

@@ -10,7 +10,9 @@ const Header: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   //Abrir componente Login al hacer click en contact
-  const handleContactClick = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+  const handleContactClick = (
+    event: React.MouseEvent<HTMLAnchorElement, MouseEvent>
+  ) => {
     //Hago preventDefault ya que sino haría redirect a /contact
     event.preventDefault();
     //Cuando se ha hecho click, el estado del modal pasa a ser true para que se muestre
@@ -26,7 +28,9 @@ const Header: React.FC = () => {
     <header className="bg-white">
       <div className="container mx-auto px-4 py-6 flex justify-between items-center">
         {/* Título */}
-        <h1 className="font-benchnine font-bold text-3xl">WE BACK</h1>
+        <Link to="/">
+          <h1 className="font-benchnine font-bold text-3xl">WE BACK</h1>
+        </Link>
         <nav>
           <ul className="flex space-x-4 gap-4">
             <li>
