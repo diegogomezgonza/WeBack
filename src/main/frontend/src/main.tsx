@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import Home from './pages/Home';
 import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
+import Profile from './pages/Profile';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
 // Rutas
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
   {
     path: '/contact',
     element: <Contact />,
+  },
+  {
+    path: '/profile',
+    element: <Profile />,
   },
 ]);
 
