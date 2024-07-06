@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Password from "./Password";
+import Password from "./RecoverPassword";
 
 // Definición del tipo de las props para incluir la función closeModal
 interface LoginProps {
