@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
 import Profile from './pages/Profile';
+import Collection from './pages/Collection';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
 // Rutas
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
     path: '/profile',
     element: <Profile />,
   },
+  {
+    path: '/collection',
+    element: <Collection />,
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
