@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ProfileContent: React.FC = () => {
+const ProfileHeader: React.FC = () => {
   return (
     <div className="flex justify-center items-start mt-16 sm:mt-24">
       <div className="flex flex-col items-center space-y-4 sm:space-y-6">
@@ -18,4 +18,4 @@ const ProfileContent: React.FC = () => {
   );
 };
 
-export default ProfileContent;
+export default ProfileHeader;

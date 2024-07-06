@@ -5,15 +5,16 @@ import '../css/index.css';
 import '../css/home.css';
 //Componentes
 import Header from '../components/Header';
-import ProfileContent from '../components/ProfileContent';
-
+import ProfileHeader from '../components/ProfileHeader';
+import ProfileGallery from '../components/ProfileGallery';
 
 
 const Profile: React.FC = () => {
   return (
     <div>
       <Header/>
-      <ProfileContent/>
+      <ProfileHeader/>
+      <ProfileGallery/>
     </div>
   );
 };
