@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Password from "./RecoverPassword";
+import Register from "./Register";
 
 // Definición del tipo de las props para incluir la función closeModal
 interface LoginProps {
@@ -7,7 +8,21 @@ interface LoginProps {
 }
 
 const Login: React.FC<LoginProps> = ({ closeModal }) => {
+  // Estado del modal de registro
+  const [showUserModal, setShowUserModal] = useState(false);
+
+  // Estado del modal de contraseña
   const [showPasswordModal, setShowPasswordModal] = useState(false);
+
+  // Función para abrir el modal de registro
+  const openUserModal = () => {
+    setShowUserModal(true);
+  };
+
+  // Función para cerrar el modal de registro
+  const closeUserModal = () => {
+    setShowUserModal(false);
+  };
 
   // Función para abrir el modal de recuperar contraseña
   const openPasswordModal = () => {
@@ -34,7 +49,12 @@ const Login: React.FC<LoginProps> = ({ closeModal }) => {
         <form>
           {/* Correo */}
           <div className="mb-4">
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">Correo Electrónico</label>
+            <label
+              htmlFor="email"
+              className="block text-sm font-medium text-gray-700 mb-2"
+            >
+              Correo Electrónico
+            </label>
             <input
               type="email"
               id="email"
@@ -43,7 +63,12 @@ const Login: React.FC<LoginProps> = ({ closeModal }) => {
           </div>
           {/* Contraseña */}
           <div className="mb-6">
-            <label htmlFor="password" className="block text-sm font-medium text-gray-700 mb-2">Contraseña</label>
+            <label
+              htmlFor="password"
+              className="block text-sm font-medium text-gray-700 mb-2"
+            >
+              Contraseña
+            </label>
             <input
               type="password"
               id="password"
@@ -51,12 +76,23 @@ const Login: React.FC<LoginProps> = ({ closeModal }) => {
             />
           </div>
           {/* Submit */}
-          <button type="submit" className="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
+          <button
+            type="submit"
+            className="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          >
             Iniciar Sesión
           </button>
         </form>
 
-        {/* Recuperar contraseña */}
+        {/* No tengo cuenta de usuario */}
+        <p
+          className="text-green-500 text-sm mt-4 text-center cursor-pointer hover:underline"
+          onClick={openUserModal}
+        >
+          No tengo cuenta de usuario
+        </p>
+
+        {/* He olvidado mi contraseña */}
         <p
           className="text-yellow-500 text-sm mt-4 text-center cursor-pointer hover:underline"
           onClick={openPasswordModal}
@@ -66,6 +102,9 @@ const Login: React.FC<LoginProps> = ({ closeModal }) => {
 
         {/* Modal para recuperar contraseña */}
         {showPasswordModal && <Password closeModal={closePasswordModal} />}
+
+        {/* Modal para registro */}
+        {showUserModal && <Register closeModal={closeUserModal} />}
       </div>
     </div>
   );
