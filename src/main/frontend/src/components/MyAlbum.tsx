@@ -11,7 +11,7 @@ const MyAlbum: React.FC = () => {
       images: ["img5.jpg", "img6.jpg", "img7.jpg", "img8.jpg"],
     },
     {
-      title: "Colección 3",
+      title: "Favorites",
       images: ["img9.jpg", "img10.jpg", "img11.jpg", "img12.jpg"],
     },
   ];
