@@ -70,7 +70,7 @@ const Register: React.FC<RegisterProps> = ({ closeModal }) => {
               htmlFor="email"
               className="block text-sm font-medium text-gray-700 mb-2"
             >
-              Correo Electrónico
+              Email
             </label>
             <input
               type="email"
