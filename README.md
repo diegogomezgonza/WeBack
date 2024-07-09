@@ -7,8 +7,6 @@
 
 - Galería Personal: Permite a los usuarios añadir obras de arte a su galería personal, donde pueden gestionar sus favoritos.
 
-- Compra Integrada: Ofrece un método de compra para adquirir las obras de arte que deseen.
-
 - Autenticación y Personalización de Perfil: Incluye un sistema de login seguro donde los usuarios pueden cambiar su imagen de perfil y nombre de usuario.
 
 ## Tecnologías utilizadas:
