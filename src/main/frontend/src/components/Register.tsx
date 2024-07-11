@@ -5,7 +5,6 @@ interface RegisterProps {
   closeModal: () => void;
 }
 
-// Componente funcional Register
 const Register: React.FC<RegisterProps> = ({ closeModal }) => {
   // Definición de estados para almacenar los valores del formulario
   const [username, setUsername] = useState("");
