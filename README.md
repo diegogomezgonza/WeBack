@@ -22,4 +22,3 @@
 - Tailwind CSS para estilos y diseño responsivo
 ### Despliegue:
 - Docker
-![Captura](https://github.com/diegogomezgonza/WeBack/assets/93382813/c117dad0-806a-4123-ae13-d452a485f628)
