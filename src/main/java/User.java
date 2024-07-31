@@ -7,6 +7,7 @@ import lombok.Data;
 @Entity
 @Data
 public class User {
+    //Propiedades modelo usuario
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
